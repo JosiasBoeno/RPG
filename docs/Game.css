@@ -1,0 +1,36 @@
+canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+body {
+    background-image: url(Img/Fundo.jpg);
+}
+#div_2 {
+    opacity: 0;
+    position: absolute;
+    height: 78px;
+    width: 56px;
+    top: 29%;
+    left: 93%;
+    transform: translate(-60%, -55%);
+    transition: opacity 1s;
+}
+#div_2:hover {
+    opacity: 1;
+}
+#div_2 input {
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 6%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+}
+#div_2 img {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
