@@ -9,7 +9,23 @@
 </head>
 <body>    
 
-    <audio autoplay loop src="Chrono.mp3" type="audio/mp3"></audio>
+    <button onclick="play()">Play Audio</button>
+
+    <script>
+        var isPlaying = false
+        var audio = new Audio("Chrono.mp3")
+        function play() {
+            if (!isPlaying) {
+                isPlaying = true
+                audio.play()
+            }
+            else {
+                isPlaying = false
+                audio.pause()
+                audio.load()
+            }
+        }
+    </script>
 
     <div id="div_2">
         <input type="checkbox" id="EasterEggFind" onchange="EasterEgg()">
